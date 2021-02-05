@@ -1,0 +1,29 @@
+@import './config';
+
+/*** RESET STYLES ***/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  background: url('../images/bg-mobile.svg') $primary-color;
+  background-repeat: no-repeat;
+  line-height: 1.6;
+  color: #fff;
+  font-family: $font-body;
+}
+
+@import './utilites';
+
+/*** MAIN LAYOUT ***/
+
+@import './layout';

@@ -1,0 +1,71 @@
+.logo {
+  width: 8rem;
+}
+
+.hero {
+  margin-top: 2.5rem;
+
+  &__text {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: $font-heading;
+  }
+
+  &__description {
+    margin: 1rem 0;
+  }
+
+  &__link {
+    background: #fff;
+    color: $primary-color;
+    padding: 0.5rem 5rem;
+    border-radius: 4rem;
+    margin-top: 1rem;
+    display: inline-block;
+    box-shadow: 0rem 0.2rem 0.8rem rgba(0, 0, 0, 0.3);
+  }
+}
+
+/*** FOOTER & ATTRIBUTION ***/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.sm-list {
+  display: flex;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 1rem;
+  }
+}
+
+.attribution {
+  margin-top: 2rem;
+  &__text {
+    font-size: 0.8rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+}
+
+@import './media-queries';

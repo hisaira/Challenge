@@ -1,0 +1,81 @@
+//MEDIA QUERIES
+
+@media screen and (min-width: 375px) {
+  body {
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-size: contain;
+  }
+
+  .logo {
+    width: 12rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  body {
+    background: url('../images/bg-desktop.svg') $primary-color no-repeat;
+  }
+
+  .logo {
+    width: 12rem;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+
+    &__img {
+      width: 55%;
+    }
+
+    &__text {
+      text-align: left;
+      margin-left: 3rem;
+    }
+
+    &__heading {
+      font-size: 2.3rem;
+      line-height: 1.4;
+    }
+
+    &__link {
+      padding: 0.5rem 3rem;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: #fff;
+      }
+    }
+  }
+
+  .footer {
+    flex-direction: row;
+    margin-top: 2rem;
+
+    .sm-list {
+      position: absolute;
+      right: 5%;
+
+      &__link {
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          border-color: $secondary-color;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    text-align: left;
+  }
+}
